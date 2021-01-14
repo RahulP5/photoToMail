@@ -23,6 +23,7 @@ def capturePhoto()
 	sleep(2)
 	camera.capture('/home/pi/Desktop/image.jpg')
 	camera.stop_preview()
+	camera.close()
 	sleep(1)
 	sendmail()
 
