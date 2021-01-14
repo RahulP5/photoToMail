@@ -28,8 +28,8 @@ def capturePhoto()
 	sendmail()
 
 def sendmail()
-	fromaddr = "precraspi@gmail.com"
-	toaddr = "precraspi@gmail.com"
+	fromaddr = "example@gmail.com"
+	toaddr = "example@gmail.com"
 	msg = MIMEMultipart()
 	msg['From'] = fromaddr
 	msg['To'] = toaddr
@@ -46,7 +46,7 @@ def sendmail()
 	msg.attach(p)
 	s = smtplib.SMTP('smtp.gmail.com', 587)
 	s.starttls()
-	s.login(fromaddr, "prec@123")
+	s.login(fromaddr, "password")
 	text = msg.as_string()
 	s.sendmail(fromaddr, toaddr, text)
 	s.quit()    
