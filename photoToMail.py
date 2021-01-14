@@ -36,7 +36,7 @@ def sendmail()
 	body = "Photo"
 	msg.attach(MIMEText(body, 'plain'))
 	filename = "image.jpg"
-	attachment = open("<File Path>", "rb")
+	attachment = open("/home/pi/Desktop/image.jpg", "rb")
 
 	p = MIMEBase('application', 'octet-stream')
 	p.set_payload((attachment).read())
