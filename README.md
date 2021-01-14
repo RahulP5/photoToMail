@@ -5,7 +5,7 @@
 
 change this location on line number 24 if u want store photo in other location
 
-* on line no 39
+* on line no 40
 > attachment = open("/home/pi/Desktop/image.jpg", "rb")
 
 >/home/pi/Desktop/image.jpg
